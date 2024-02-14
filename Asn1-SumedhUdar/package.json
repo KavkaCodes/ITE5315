@@ -1,0 +1,14 @@
+{
+  "name": "Asn1-SumedhUdar",
+  "version": "1.0.0",
+  "description": "This is the directory for assignment 1 by Sumedh",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sumedh Udar",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

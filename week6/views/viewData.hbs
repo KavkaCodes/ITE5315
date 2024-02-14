@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandleBars Example</title>
+</head>
+<body>
+    <h1>Template Engine</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Occupation</th>            
+        </tr>
+        {{#each data}}
+            {{#unless this.author}}
+                <tr>
+                    <td>{{this.name}}</td>
+                    <td>{{this.age}}</td>
+                    <td>{{this.occupation}}</td>
+                </tr>
+            {{/unless}}
+        {{/each}}
+    </table>
+</body>
+</html>
