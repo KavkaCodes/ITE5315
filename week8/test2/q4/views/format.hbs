@@ -1,0 +1,23 @@
+<table border="1" id="students">
+    <tr>
+        <th>Student Id</th>
+        <th>Name</th>
+        <th>Program</th>
+        <th>GPA</th>
+    </tr>
+    {{#each data}}
+        {{!-- {{#if this.avg_reviews}} --}}
+            <tr>
+                <td>{{this.studId}}</td>
+                <td>{{this.name}}</td>
+                <td>{{this.program}}</td>
+                {{!-- <td>{{this.avg_reviews}}</td> --}}
+
+                
+                {{#checkgpa this.gpa}} {{/checkgpa}}
+            </tr>
+        {{!-- {{/if}} --}}
+
+
+    {{/each}}
+</table>

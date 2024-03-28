@@ -1,0 +1,12 @@
+<table border="1" id="books">
+    <tr>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Price</th>
+        <th>Num of Reviews</th>
+    </tr>
+    {{#each data}}
+        {{#checkData this}} {{/checkData}}
+    {{/each}}
+</table>
+
