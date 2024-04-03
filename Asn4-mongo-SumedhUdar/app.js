@@ -60,19 +60,6 @@ app.get('/api/employees', function(req, res) {
 	});
 });
 
-//get all books data from db
-app.get('/api/books', function(req, res) {
-	// use mongoose to get all todos in the database
-	Books.find(function(err, books) {
-		// if there is an error retrieving, send the error otherwise send data
-		if (err)
-			res.send(err)
-		// res.json(books); // return all books in JSON format
-        res.render('allData', {data: books});
-	});
-
-});
-
 // get a employee with ID of 1
 app.get('/api/employees/:employee_id', function(req, res) {
 	let id = req.params.employee_id;

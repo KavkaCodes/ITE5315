@@ -48,16 +48,16 @@ router
       book.genres = req.body.genres;
       book.rating = req.body.rating;
       // Save book to MongoDB
-      // book.save(function (err,results) {
-      //   if (err) {
-      //     // Log error if failed
-      //     console.log(err);
-      //     return;
-      //   } else {
-      //     // Route to home to view books if suceeeded
-      //     res.redirect("/");
-      //   }
-      // });
+      book.save(function (err,results) {
+        if (err) {
+          // Log error if failed
+          console.log(err);
+          return;
+        } else {
+          // Route to home to view books if suceeeded
+          res.redirect("/");
+        }
+      });
 
       try {
         const result = await book.save();
